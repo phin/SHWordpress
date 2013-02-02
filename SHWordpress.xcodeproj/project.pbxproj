@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4231BAC016BCCE2500DEFCAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4231BABF16BCCE2500DEFCAA /* UIKit.framework */; };
+		4231BAC216BCCE2500DEFCAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4231BAC116BCCE2500DEFCAA /* Foundation.framework */; };
+		4231BAC416BCCE2500DEFCAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4231BAC316BCCE2500DEFCAA /* CoreGraphics.framework */; };
+		4231BACA16BCCE2500DEFCAA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4231BAC816BCCE2500DEFCAA /* InfoPlist.strings */; };
+		4231BACC16BCCE2500DEFCAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4231BACB16BCCE2500DEFCAA /* main.m */; };
+		4231BAD016BCCE2500DEFCAA /* SHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4231BACF16BCCE2500DEFCAA /* SHAppDelegate.m */; };
+		4231BAD216BCCE2500DEFCAA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4231BAD116BCCE2500DEFCAA /* Default.png */; };
+		4231BAD416BCCE2500DEFCAA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4231BAD316BCCE2500DEFCAA /* Default@2x.png */; };
+		4231BAD616BCCE2500DEFCAA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4231BAD516BCCE2500DEFCAA /* Default-568h@2x.png */; };
+		4231BAD916BCCE2500DEFCAA /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4231BAD716BCCE2500DEFCAA /* MainStoryboard_iPhone.storyboard */; };
+		4231BADC16BCCE2500DEFCAA /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4231BADA16BCCE2500DEFCAA /* MainStoryboard_iPad.storyboard */; };
+		4231BADF16BCCE2500DEFCAA /* SHFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4231BADE16BCCE2500DEFCAA /* SHFirstViewController.m */; };
+		4231BAE116BCCE2500DEFCAA /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 4231BAE016BCCE2500DEFCAA /* first.png */; };
+		4231BAE316BCCE2500DEFCAA /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4231BAE216BCCE2500DEFCAA /* first@2x.png */; };
+		4231BAE616BCCE2500DEFCAA /* SHSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4231BAE516BCCE2500DEFCAA /* SHSecondViewController.m */; };
+		4231BAE816BCCE2500DEFCAA /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 4231BAE716BCCE2500DEFCAA /* second.png */; };
+		4231BAEA16BCCE2500DEFCAA /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4231BAE916BCCE2500DEFCAA /* second@2x.png */; };
+		4231BAF216BCCE2500DEFCAA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4231BAF116BCCE2500DEFCAA /* SenTestingKit.framework */; };
+		4231BAF316BCCE2500DEFCAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4231BABF16BCCE2500DEFCAA /* UIKit.framework */; };
+		4231BAF416BCCE2500DEFCAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4231BAC116BCCE2500DEFCAA /* Foundation.framework */; };
+		4231BAFC16BCCE2500DEFCAA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4231BAFA16BCCE2500DEFCAA /* InfoPlist.strings */; };
+		4231BAFF16BCCE2500DEFCAA /* SHWordpressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4231BAFE16BCCE2500DEFCAA /* SHWordpressTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4231BAF516BCCE2500DEFCAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4231BAB416BCCE2500DEFCAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4231BABB16BCCE2500DEFCAA;
+			remoteInfo = SHWordpress;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4231BABC16BCCE2500DEFCAA /* SHWordpress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHWordpress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4231BABF16BCCE2500DEFCAA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4231BAC116BCCE2500DEFCAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4231BAC316BCCE2500DEFCAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4231BAC716BCCE2500DEFCAA /* SHWordpress-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SHWordpress-Info.plist"; sourceTree = "<group>"; };
+		4231BAC916BCCE2500DEFCAA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4231BACB16BCCE2500DEFCAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4231BACD16BCCE2500DEFCAA /* SHWordpress-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SHWordpress-Prefix.pch"; sourceTree = "<group>"; };
+		4231BACE16BCCE2500DEFCAA /* SHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHAppDelegate.h; sourceTree = "<group>"; };
+		4231BACF16BCCE2500DEFCAA /* SHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHAppDelegate.m; sourceTree = "<group>"; };
+		4231BAD116BCCE2500DEFCAA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4231BAD316BCCE2500DEFCAA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4231BAD516BCCE2500DEFCAA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4231BAD816BCCE2500DEFCAA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		4231BADB16BCCE2500DEFCAA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		4231BADD16BCCE2500DEFCAA /* SHFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHFirstViewController.h; sourceTree = "<group>"; };
+		4231BADE16BCCE2500DEFCAA /* SHFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHFirstViewController.m; sourceTree = "<group>"; };
+		4231BAE016BCCE2500DEFCAA /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		4231BAE216BCCE2500DEFCAA /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		4231BAE416BCCE2500DEFCAA /* SHSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHSecondViewController.h; sourceTree = "<group>"; };
+		4231BAE516BCCE2500DEFCAA /* SHSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHSecondViewController.m; sourceTree = "<group>"; };
+		4231BAE716BCCE2500DEFCAA /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		4231BAE916BCCE2500DEFCAA /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		4231BAF016BCCE2500DEFCAA /* SHWordpressTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHWordpressTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4231BAF116BCCE2500DEFCAA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4231BAF916BCCE2500DEFCAA /* SHWordpressTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SHWordpressTests-Info.plist"; sourceTree = "<group>"; };
+		4231BAFB16BCCE2500DEFCAA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4231BAFD16BCCE2500DEFCAA /* SHWordpressTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHWordpressTests.h; sourceTree = "<group>"; };
+		4231BAFE16BCCE2500DEFCAA /* SHWordpressTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHWordpressTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4231BAB916BCCE2500DEFCAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4231BAC016BCCE2500DEFCAA /* UIKit.framework in Frameworks */,
+				4231BAC216BCCE2500DEFCAA /* Foundation.framework in Frameworks */,
+				4231BAC416BCCE2500DEFCAA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4231BAEC16BCCE2500DEFCAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4231BAF216BCCE2500DEFCAA /* SenTestingKit.framework in Frameworks */,
+				4231BAF316BCCE2500DEFCAA /* UIKit.framework in Frameworks */,
+				4231BAF416BCCE2500DEFCAA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4231BAB316BCCE2500DEFCAA = {
+			isa = PBXGroup;
+			children = (
+				4231BAC516BCCE2500DEFCAA /* SHWordpress */,
+				4231BAF716BCCE2500DEFCAA /* SHWordpressTests */,
+				4231BABE16BCCE2500DEFCAA /* Frameworks */,
+				4231BABD16BCCE2500DEFCAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4231BABD16BCCE2500DEFCAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4231BABC16BCCE2500DEFCAA /* SHWordpress.app */,
+				4231BAF016BCCE2500DEFCAA /* SHWordpressTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4231BABE16BCCE2500DEFCAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4231BABF16BCCE2500DEFCAA /* UIKit.framework */,
+				4231BAC116BCCE2500DEFCAA /* Foundation.framework */,
+				4231BAC316BCCE2500DEFCAA /* CoreGraphics.framework */,
+				4231BAF116BCCE2500DEFCAA /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4231BAC516BCCE2500DEFCAA /* SHWordpress */ = {
+			isa = PBXGroup;
+			children = (
+				4231BACE16BCCE2500DEFCAA /* SHAppDelegate.h */,
+				4231BACF16BCCE2500DEFCAA /* SHAppDelegate.m */,
+				4231BAD716BCCE2500DEFCAA /* MainStoryboard_iPhone.storyboard */,
+				4231BADA16BCCE2500DEFCAA /* MainStoryboard_iPad.storyboard */,
+				4231BADD16BCCE2500DEFCAA /* SHFirstViewController.h */,
+				4231BADE16BCCE2500DEFCAA /* SHFirstViewController.m */,
+				4231BAE016BCCE2500DEFCAA /* first.png */,
+				4231BAE216BCCE2500DEFCAA /* first@2x.png */,
+				4231BAE416BCCE2500DEFCAA /* SHSecondViewController.h */,
+				4231BAE516BCCE2500DEFCAA /* SHSecondViewController.m */,
+				4231BAE716BCCE2500DEFCAA /* second.png */,
+				4231BAE916BCCE2500DEFCAA /* second@2x.png */,
+				4231BAC616BCCE2500DEFCAA /* Supporting Files */,
+			);
+			path = SHWordpress;
+			sourceTree = "<group>";
+		};
+		4231BAC616BCCE2500DEFCAA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4231BAC716BCCE2500DEFCAA /* SHWordpress-Info.plist */,
+				4231BAC816BCCE2500DEFCAA /* InfoPlist.strings */,
+				4231BACB16BCCE2500DEFCAA /* main.m */,
+				4231BACD16BCCE2500DEFCAA /* SHWordpress-Prefix.pch */,
+				4231BAD116BCCE2500DEFCAA /* Default.png */,
+				4231BAD316BCCE2500DEFCAA /* Default@2x.png */,
+				4231BAD516BCCE2500DEFCAA /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4231BAF716BCCE2500DEFCAA /* SHWordpressTests */ = {
+			isa = PBXGroup;
+			children = (
+				4231BAFD16BCCE2500DEFCAA /* SHWordpressTests.h */,
+				4231BAFE16BCCE2500DEFCAA /* SHWordpressTests.m */,
+				4231BAF816BCCE2500DEFCAA /* Supporting Files */,
+			);
+			path = SHWordpressTests;
+			sourceTree = "<group>";
+		};
+		4231BAF816BCCE2500DEFCAA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4231BAF916BCCE2500DEFCAA /* SHWordpressTests-Info.plist */,
+				4231BAFA16BCCE2500DEFCAA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4231BABB16BCCE2500DEFCAA /* SHWordpress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4231BB0216BCCE2500DEFCAA /* Build configuration list for PBXNativeTarget "SHWordpress" */;
+			buildPhases = (
+				4231BAB816BCCE2500DEFCAA /* Sources */,
+				4231BAB916BCCE2500DEFCAA /* Frameworks */,
+				4231BABA16BCCE2500DEFCAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SHWordpress;
+			productName = SHWordpress;
+			productReference = 4231BABC16BCCE2500DEFCAA /* SHWordpress.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4231BAEF16BCCE2500DEFCAA /* SHWordpressTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4231BB0516BCCE2500DEFCAA /* Build configuration list for PBXNativeTarget "SHWordpressTests" */;
+			buildPhases = (
+				4231BAEB16BCCE2500DEFCAA /* Sources */,
+				4231BAEC16BCCE2500DEFCAA /* Frameworks */,
+				4231BAED16BCCE2500DEFCAA /* Resources */,
+				4231BAEE16BCCE2500DEFCAA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4231BAF616BCCE2500DEFCAA /* PBXTargetDependency */,
+			);
+			name = SHWordpressTests;
+			productName = SHWordpressTests;
+			productReference = 4231BAF016BCCE2500DEFCAA /* SHWordpressTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4231BAB416BCCE2500DEFCAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SH;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Seraphin Hochart";
+			};
+			buildConfigurationList = 4231BAB716BCCE2500DEFCAA /* Build configuration list for PBXProject "SHWordpress" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4231BAB316BCCE2500DEFCAA;
+			productRefGroup = 4231BABD16BCCE2500DEFCAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4231BABB16BCCE2500DEFCAA /* SHWordpress */,
+				4231BAEF16BCCE2500DEFCAA /* SHWordpressTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4231BABA16BCCE2500DEFCAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4231BACA16BCCE2500DEFCAA /* InfoPlist.strings in Resources */,
+				4231BAD216BCCE2500DEFCAA /* Default.png in Resources */,
+				4231BAD416BCCE2500DEFCAA /* Default@2x.png in Resources */,
+				4231BAD616BCCE2500DEFCAA /* Default-568h@2x.png in Resources */,
+				4231BAD916BCCE2500DEFCAA /* MainStoryboard_iPhone.storyboard in Resources */,
+				4231BADC16BCCE2500DEFCAA /* MainStoryboard_iPad.storyboard in Resources */,
+				4231BAE116BCCE2500DEFCAA /* first.png in Resources */,
+				4231BAE316BCCE2500DEFCAA /* first@2x.png in Resources */,
+				4231BAE816BCCE2500DEFCAA /* second.png in Resources */,
+				4231BAEA16BCCE2500DEFCAA /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4231BAED16BCCE2500DEFCAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4231BAFC16BCCE2500DEFCAA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4231BAEE16BCCE2500DEFCAA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4231BAB816BCCE2500DEFCAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4231BACC16BCCE2500DEFCAA /* main.m in Sources */,
+				4231BAD016BCCE2500DEFCAA /* SHAppDelegate.m in Sources */,
+				4231BADF16BCCE2500DEFCAA /* SHFirstViewController.m in Sources */,
+				4231BAE616BCCE2500DEFCAA /* SHSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4231BAEB16BCCE2500DEFCAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4231BAFF16BCCE2500DEFCAA /* SHWordpressTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4231BAF616BCCE2500DEFCAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4231BABB16BCCE2500DEFCAA /* SHWordpress */;
+			targetProxy = 4231BAF516BCCE2500DEFCAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4231BAC816BCCE2500DEFCAA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4231BAC916BCCE2500DEFCAA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4231BAD716BCCE2500DEFCAA /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4231BAD816BCCE2500DEFCAA /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		4231BADA16BCCE2500DEFCAA /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4231BADB16BCCE2500DEFCAA /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		4231BAFA16BCCE2500DEFCAA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4231BAFB16BCCE2500DEFCAA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4231BB0016BCCE2500DEFCAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4231BB0116BCCE2500DEFCAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4231BB0316BCCE2500DEFCAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SHWordpress/SHWordpress-Prefix.pch";
+				INFOPLIST_FILE = "SHWordpress/SHWordpress-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4231BB0416BCCE2500DEFCAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SHWordpress/SHWordpress-Prefix.pch";
+				INFOPLIST_FILE = "SHWordpress/SHWordpress-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4231BB0616BCCE2500DEFCAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SHWordpress.app/SHWordpress";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SHWordpress/SHWordpress-Prefix.pch";
+				INFOPLIST_FILE = "SHWordpressTests/SHWordpressTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4231BB0716BCCE2500DEFCAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SHWordpress.app/SHWordpress";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SHWordpress/SHWordpress-Prefix.pch";
+				INFOPLIST_FILE = "SHWordpressTests/SHWordpressTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4231BAB716BCCE2500DEFCAA /* Build configuration list for PBXProject "SHWordpress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4231BB0016BCCE2500DEFCAA /* Debug */,
+				4231BB0116BCCE2500DEFCAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4231BB0216BCCE2500DEFCAA /* Build configuration list for PBXNativeTarget "SHWordpress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4231BB0316BCCE2500DEFCAA /* Debug */,
+				4231BB0416BCCE2500DEFCAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4231BB0516BCCE2500DEFCAA /* Build configuration list for PBXNativeTarget "SHWordpressTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4231BB0616BCCE2500DEFCAA /* Debug */,
+				4231BB0716BCCE2500DEFCAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4231BAB416BCCE2500DEFCAA /* Project object */;
+}
