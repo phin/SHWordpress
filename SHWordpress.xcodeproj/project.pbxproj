@@ -29,6 +29,12 @@
 		4231BAF416BCCE2500DEFCAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4231BAC116BCCE2500DEFCAA /* Foundation.framework */; };
 		4231BAFC16BCCE2500DEFCAA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4231BAFA16BCCE2500DEFCAA /* InfoPlist.strings */; };
 		4231BAFF16BCCE2500DEFCAA /* SHWordpressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4231BAFE16BCCE2500DEFCAA /* SHWordpressTests.m */; };
+		4231BB0E16BD7F9F00DEFCAA /* SHWordpress.m in Sources */ = {isa = PBXBuildFile; fileRef = 4231BB0D16BD7F9F00DEFCAA /* SHWordpress.m */; };
+		4231BB1416BD96B600DEFCAA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4231BB1316BD96B600DEFCAA /* CoreData.framework */; };
+		4231BB1716BD989900DEFCAA /* SHWordpress.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4231BB1516BD989900DEFCAA /* SHWordpress.xcdatamodeld */; };
+		42DD8ED816BDA6CC0093C675 /* SHDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DD8ED716BDA6CC0093C675 /* SHDetailViewController.m */; };
+		42DD8EF916BDA89E0093C675 /* SHInfos.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DD8EF816BDA89E0093C675 /* SHInfos.m */; };
+		42DD8EFC16BDA89E0093C675 /* SHPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DD8EFB16BDA89E0093C675 /* SHPost.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +77,16 @@
 		4231BAFB16BCCE2500DEFCAA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4231BAFD16BCCE2500DEFCAA /* SHWordpressTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHWordpressTests.h; sourceTree = "<group>"; };
 		4231BAFE16BCCE2500DEFCAA /* SHWordpressTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHWordpressTests.m; sourceTree = "<group>"; };
+		4231BB0C16BD7F9F00DEFCAA /* SHWordpress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHWordpress.h; sourceTree = "<group>"; };
+		4231BB0D16BD7F9F00DEFCAA /* SHWordpress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHWordpress.m; sourceTree = "<group>"; };
+		4231BB1316BD96B600DEFCAA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4231BB1616BD989900DEFCAA /* SHWordpress.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SHWordpress.xcdatamodel; sourceTree = "<group>"; };
+		42DD8ED616BDA6CC0093C675 /* SHDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDetailViewController.h; sourceTree = "<group>"; };
+		42DD8ED716BDA6CC0093C675 /* SHDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHDetailViewController.m; sourceTree = "<group>"; };
+		42DD8EF716BDA89E0093C675 /* SHInfos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHInfos.h; sourceTree = "<group>"; };
+		42DD8EF816BDA89E0093C675 /* SHInfos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHInfos.m; sourceTree = "<group>"; };
+		42DD8EFA16BDA89E0093C675 /* SHPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPost.h; sourceTree = "<group>"; };
+		42DD8EFB16BDA89E0093C675 /* SHPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPost.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4231BB1416BD96B600DEFCAA /* CoreData.framework in Frameworks */,
 				4231BAC016BCCE2500DEFCAA /* UIKit.framework in Frameworks */,
 				4231BAC216BCCE2500DEFCAA /* Foundation.framework in Frameworks */,
 				4231BAC416BCCE2500DEFCAA /* CoreGraphics.framework in Frameworks */,
@@ -119,6 +136,7 @@
 		4231BABE16BCCE2500DEFCAA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4231BB1316BD96B600DEFCAA /* CoreData.framework */,
 				4231BABF16BCCE2500DEFCAA /* UIKit.framework */,
 				4231BAC116BCCE2500DEFCAA /* Foundation.framework */,
 				4231BAC316BCCE2500DEFCAA /* CoreGraphics.framework */,
@@ -130,18 +148,11 @@
 		4231BAC516BCCE2500DEFCAA /* SHWordpress */ = {
 			isa = PBXGroup;
 			children = (
-				4231BACE16BCCE2500DEFCAA /* SHAppDelegate.h */,
-				4231BACF16BCCE2500DEFCAA /* SHAppDelegate.m */,
-				4231BAD716BCCE2500DEFCAA /* MainStoryboard_iPhone.storyboard */,
-				4231BADA16BCCE2500DEFCAA /* MainStoryboard_iPad.storyboard */,
-				4231BADD16BCCE2500DEFCAA /* SHFirstViewController.h */,
-				4231BADE16BCCE2500DEFCAA /* SHFirstViewController.m */,
-				4231BAE016BCCE2500DEFCAA /* first.png */,
-				4231BAE216BCCE2500DEFCAA /* first@2x.png */,
-				4231BAE416BCCE2500DEFCAA /* SHSecondViewController.h */,
-				4231BAE516BCCE2500DEFCAA /* SHSecondViewController.m */,
-				4231BAE716BCCE2500DEFCAA /* second.png */,
-				4231BAE916BCCE2500DEFCAA /* second@2x.png */,
+				4231BB0B16BD7F7C00DEFCAA /* SHWordpress */,
+				4231BB0A16BD7F6D00DEFCAA /* Delegate & Storyboard */,
+				4231BB0816BD7F5400DEFCAA /* Regular Posts */,
+				4231BB0916BD7F5F00DEFCAA /* Custom Posts */,
+				42DD8ED516BDA68D0093C675 /* Detailed View */,
 				4231BAC616BCCE2500DEFCAA /* Supporting Files */,
 			);
 			path = SHWordpress;
@@ -178,6 +189,70 @@
 				4231BAFA16BCCE2500DEFCAA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4231BB0816BD7F5400DEFCAA /* Regular Posts */ = {
+			isa = PBXGroup;
+			children = (
+				4231BADD16BCCE2500DEFCAA /* SHFirstViewController.h */,
+				4231BADE16BCCE2500DEFCAA /* SHFirstViewController.m */,
+				4231BAE016BCCE2500DEFCAA /* first.png */,
+				4231BAE216BCCE2500DEFCAA /* first@2x.png */,
+			);
+			name = "Regular Posts";
+			sourceTree = "<group>";
+		};
+		4231BB0916BD7F5F00DEFCAA /* Custom Posts */ = {
+			isa = PBXGroup;
+			children = (
+				4231BAE416BCCE2500DEFCAA /* SHSecondViewController.h */,
+				4231BAE516BCCE2500DEFCAA /* SHSecondViewController.m */,
+				4231BAE716BCCE2500DEFCAA /* second.png */,
+				4231BAE916BCCE2500DEFCAA /* second@2x.png */,
+			);
+			name = "Custom Posts";
+			sourceTree = "<group>";
+		};
+		4231BB0A16BD7F6D00DEFCAA /* Delegate & Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4231BACE16BCCE2500DEFCAA /* SHAppDelegate.h */,
+				4231BACF16BCCE2500DEFCAA /* SHAppDelegate.m */,
+				4231BAD716BCCE2500DEFCAA /* MainStoryboard_iPhone.storyboard */,
+				4231BADA16BCCE2500DEFCAA /* MainStoryboard_iPad.storyboard */,
+			);
+			name = "Delegate & Storyboard";
+			sourceTree = "<group>";
+		};
+		4231BB0B16BD7F7C00DEFCAA /* SHWordpress */ = {
+			isa = PBXGroup;
+			children = (
+				4231BB1216BD965100DEFCAA /* CoreData */,
+				4231BB0C16BD7F9F00DEFCAA /* SHWordpress.h */,
+				4231BB0D16BD7F9F00DEFCAA /* SHWordpress.m */,
+			);
+			name = SHWordpress;
+			sourceTree = "<group>";
+		};
+		4231BB1216BD965100DEFCAA /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4231BB1516BD989900DEFCAA /* SHWordpress.xcdatamodeld */,
+				42DD8EF716BDA89E0093C675 /* SHInfos.h */,
+				42DD8EF816BDA89E0093C675 /* SHInfos.m */,
+				42DD8EFA16BDA89E0093C675 /* SHPost.h */,
+				42DD8EFB16BDA89E0093C675 /* SHPost.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		42DD8ED516BDA68D0093C675 /* Detailed View */ = {
+			isa = PBXGroup;
+			children = (
+				42DD8ED616BDA6CC0093C675 /* SHDetailViewController.h */,
+				42DD8ED716BDA6CC0093C675 /* SHDetailViewController.m */,
+			);
+			name = "Detailed View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +375,11 @@
 				4231BAD016BCCE2500DEFCAA /* SHAppDelegate.m in Sources */,
 				4231BADF16BCCE2500DEFCAA /* SHFirstViewController.m in Sources */,
 				4231BAE616BCCE2500DEFCAA /* SHSecondViewController.m in Sources */,
+				4231BB0E16BD7F9F00DEFCAA /* SHWordpress.m in Sources */,
+				4231BB1716BD989900DEFCAA /* SHWordpress.xcdatamodeld in Sources */,
+				42DD8ED816BDA6CC0093C675 /* SHDetailViewController.m in Sources */,
+				42DD8EF916BDA89E0093C675 /* SHInfos.m in Sources */,
+				42DD8EFC16BDA89E0093C675 /* SHPost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +570,7 @@
 				4231BB0416BCCE2500DEFCAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4231BB0516BCCE2500DEFCAA /* Build configuration list for PBXNativeTarget "SHWordpressTests" */ = {
 			isa = XCConfigurationList;
@@ -498,8 +579,22 @@
 				4231BB0716BCCE2500DEFCAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4231BB1516BD989900DEFCAA /* SHWordpress.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4231BB1616BD989900DEFCAA /* SHWordpress.xcdatamodel */,
+			);
+			currentVersion = 4231BB1616BD989900DEFCAA /* SHWordpress.xcdatamodel */;
+			path = SHWordpress.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4231BAB416BCCE2500DEFCAA /* Project object */;
 }

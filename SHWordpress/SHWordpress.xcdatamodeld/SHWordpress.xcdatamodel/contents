@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2057" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="SHInfos" representedClassName="SHInfos" syncable="YES">
+        <attribute name="about" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="base_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="json_posts" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SHPost" representedClassName="SHPost" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categories" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="excerpt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="permalink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="post_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="tags" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="SHInfos" positionX="144" positionY="153" width="128" height="105"/>
+        <element name="SHPost" positionX="324" positionY="126" width="128" height="178"/>
+    </elements>
+</model>

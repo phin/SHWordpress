@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SHFirstViewController : UIViewController
+@interface SHFirstViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+    NSArray *a_posts;
+}
 
 @end
