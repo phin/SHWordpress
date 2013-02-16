@@ -15,3 +15,5 @@ This is a week-end project, that can be a good enough structure to build an app 
 	- Pagination (pull to refresh / infinite scroll)
 	- Get posts from Custom Post Types.
 	- For now we display the HTML content of the page in a UIWebView, but because we have the separate elements in a database, we can do much better.
+	- We have the tags/category in CoreData but their are not displayed.
+	- Put the first image of each post in the UITableViewController
