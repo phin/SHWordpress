@@ -59,51 +59,54 @@
     NSArray *a_infos = [self getObjectsForEntity:@"SHInfos" withSortKey:nil andSortAscending:YES andContext:DELEGATE_CONTEXT];
     SHInfos *sh_infos = [a_infos lastObject];
     NSError *jsonError = nil;
-    id jsonObject = [NSJSONSerialization JSONObjectWithData:[sh_infos.json_posts dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&jsonError];
+    //NSLog(@"Existing JSON : %@", sh_infos.json_posts);
     
-    if ([jsonObject isKindOfClass:[NSArray class]]) {
-        NSLog(@"JSON Recieved is an array");
-        NSArray *jsonArray = (NSArray *)jsonObject;
-
-        // Loop into the Array
-        for (int i = 0; i < [jsonArray count]; i++) {
-            NSDictionary *d_post = [jsonArray objectAtIndex:i];
-            //categories,id,tags,content,author,date,excerpt,permalink,title
-            SHPost *sh_post = (SHPost *)[NSEntityDescription insertNewObjectForEntityForName:@"SHPost" inManagedObjectContext:DELEGATE_CONTEXT];
-            // Set the values
-            NSDateFormatter *df = [[NSDateFormatter alloc] init];
-            [df setDateFormat:@"yyyy-MM-dd hh:mm:ss"];
-            NSDate *date_post = [df dateFromString:[NSString stringWithFormat:@"%@", [d_post objectForKey:@"date"]]];
-            sh_post.post_id    = [NSNumber numberWithInt:[[d_post objectForKey:@"id"] intValue]];
-            sh_post.title      = [NSString stringWithFormat:@"%@", [d_post objectForKey:@"title"]];
-            sh_post.author     = [NSString stringWithFormat:@"%@", [d_post objectForKey:@"author"]];
-            sh_post.content    = [NSString stringWithFormat:@"%@", [d_post objectForKey:@"content"]];
-            sh_post.excerpt    = [NSString stringWithFormat:@"%@", [d_post objectForKey:@"excerpt"]];
-            sh_post.permalink  = [NSString stringWithFormat:@"%@", [d_post objectForKey:@"permalink"]];
-            sh_post.tags       = (NSArray *)[d_post objectForKey:@"tags"];
-            sh_post.categories = (NSArray *)[d_post objectForKey:@"categories"];
-            sh_post.date       = date_post;
+    if (sh_infos.json_posts) {
+        id jsonObject = [NSJSONSerialization JSONObjectWithData:[sh_infos.json_posts dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&jsonError];
+        
+        if ([jsonObject isKindOfClass:[NSArray class]]) {
+            NSArray *jsonArray = (NSArray *)jsonObject;
             
-            NSLog(@"Saving Post:%@", [NSString stringWithFormat:@"%@", [d_post objectForKey:@"title"]]);
-            // Save into DB
-            NSError *error;
-            if (![DELEGATE_CONTEXT save:&error]) {
-                NSLog(@"Problem saving: %@", [error localizedDescription]);
+            // Loop into the Array
+            for (int i = 0; i < [jsonArray count]; i++) {
+                NSDictionary *d_post = [jsonArray objectAtIndex:i];
+                //categories,id,tags,content,author,date,excerpt,permalink,title
+                SHPost *sh_post = (SHPost *)[NSEntityDescription insertNewObjectForEntityForName:@"SHPost" inManagedObjectContext:DELEGATE_CONTEXT];
+                // Set the values
+                NSDateFormatter *df = [[NSDateFormatter alloc] init];
+                [df setDateFormat:@"yyyy-MM-dd hh:mm:ss"];
+                NSDate *date_post = [df dateFromString:[NSString stringWithFormat:@"%@", [d_post objectForKey:@"date"]]];
+                sh_post.post_id    = [NSNumber numberWithInt:[[d_post objectForKey:@"id"] intValue]];
+                sh_post.title      = [NSString stringWithFormat:@"%@", [d_post objectForKey:@"title"]];
+                sh_post.author     = [NSString stringWithFormat:@"%@", [d_post objectForKey:@"author"]];
+                sh_post.content    = [NSString stringWithFormat:@"%@", [d_post objectForKey:@"content"]];
+                sh_post.excerpt    = [NSString stringWithFormat:@"%@", [d_post objectForKey:@"excerpt"]];
+                sh_post.permalink  = [NSString stringWithFormat:@"%@", [d_post objectForKey:@"permalink"]];
+                sh_post.tags       = (NSArray *)[d_post objectForKey:@"tags"];
+                sh_post.categories = (NSArray *)[d_post objectForKey:@"categories"];
+                sh_post.date       = date_post;
+                
+                NSLog(@"Saving Post:%@", [NSString stringWithFormat:@"%@", [d_post objectForKey:@"title"]]);
+                // Save into DB
+                NSError *error;
+                if (![DELEGATE_CONTEXT save:&error]) {
+                    NSLog(@"Problem saving: %@", [error localizedDescription]);
+                }
             }
         }
     } else {
-        NSLog(@"JSON Recieved is dictionary");
-        NSDictionary *jsonDictionary = (NSDictionary *)jsonObject;
-        NSLog(@"jsonDictionary - %@",jsonDictionary);
-        // TODO Needs to be handled
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"There has been a problem loading the data. Please try again later." delegate:nil cancelButtonTitle:@"Oh Snap!" otherButtonTitles: nil];
+        [alert show];
     }
     
 }
 
 + (BOOL) isNewContentAvailable {
     // We can first check if an internet connection is accessible
+    // TODO
     
     // Check if the current link is still the same as the old one.
+    // TODO
     
     // Compare the Recieved JSON to the one we have in DB, to check if there is differences. If there is, update DB, if not, keep going.
     NSError *error = nil;
@@ -126,8 +129,7 @@
 
         sh_infos.json_posts = s_json;
         
-        if (![DELEGATE_CONTEXT save:&error])
-        {
+        if (![DELEGATE_CONTEXT save:&error]) {
             NSLog(@"Problem saving: %@", [error localizedDescription]);
         }
         return YES;
@@ -152,7 +154,7 @@
     SHPost *sh_post = [[SHPost alloc] init];
     
     // Fetch req with predicate
-    
+    // TODO
     return sh_post;
 }
  
